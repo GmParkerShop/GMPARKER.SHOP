@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMPARKER SHOP | High Quality Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #00d4ff;
+            --bg-dark: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --accent: #ff0055;
+            --text-main: #ffffff;
+            --text-dim: #b3b3b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .tagline {
+            font-weight: bold;
+            color: var(--text-main);
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+        }
+
+        .card h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            color: var(--primary-color);
+        }
+
+        .price-list {
+            list-style: none;
+        }
+
+        .price-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .price-list li span.price {
+            font-weight: bold;
+            color: #4cd137;
+        }
+
+        .promo {
+            background: var(--accent);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        .contact-section, .community-section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-wa { background-color: #25d366; color: white; }
+        .btn-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
+        .btn-yt { background-color: #ff0000; color: white; }
+        .btn-tt { background-color: #000000; color: white; border: 1px solid #fff; }
+
+        .btn:hover { opacity: 0.8; transform: scale(1.02); }
+
+        .admin-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .admin-card {
+            background: #252525;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+
+        .payment-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GMPARKER SHOP</h1>
+    <p class="tagline">⚡ CEPAT - MURAH - BERKUALITAS ⚡</p>
+</header>
+
+<div class="container">
+    
+    <div class="grid">
+        <!-- Render & Edit -->
+        <div class="card">
+            <h2><i class="fas fa-paint-brush"></i> RENDER & EDIT</h2>
+            <ul class="price-list">
+                <li><span>✨ Render</span> <span class="price">4K</span></li>
+                <li><span>🎨 Render Edit</span> <span class="price">2K</span></li>
+                <li><span>🎬 JJ Render</span> <span class="price">2K</span></li>
+                <li><span>🖼️ Edit Banner YouTube</span> <span class="price">5K</span></li>
+                <li><span>💎 Edit Logo</span> <span class="price">5K</span></li>
+            </ul>
+            <div class="promo">🎁 FREE HD RENDER!</div>
+        </div>
+
+        <!-- Modelling & Skin -->
+        <div class="card">
+            <h2><i class="fas fa-cube"></i> MODELLING & SKIN</h2>
+            <ul class="price-list">
+                <li><span>🏗️ Modelling</span> <span class="price">10K</span></li>
+                <li><span>👕 Custom Skin</span> <span class="price">5K</span></li>
+                <li><span>🔄 Remake Skin</span> <span class="price">4K</span></li>
+            </ul>
+        </div>
+
+        <!-- Marketplace -->
+        <div class="card">
+            <h2><i class="fas fa-shopping-cart"></i> MARKETPLACE</h2>
+            <ul class="price-list">
+                <li><span>🗺️ Map Marketplace</span> <span class="price">80K</span></li>
+                <li><span>⚙️ Add-on Marketplace</span> <span class="price">50K</span></li>
+                <li><span>🎭 Addon Skin Marketplace</span> <span class="price">40K</span></li>
+            </ul>
+        </div>
+
+        <!-- Build Project -->
+        <div class="card">
+            <h2><i class="fas fa-hammer"></i> BUILD PROJECT</h2>
+            <ul class="price-list">
+                <li><span>🏠 Build Kecil</span> <span class="price">10K</span></li>
+                <li><span>🏢 Build Sedang</span> <span class="price">20K</span></li>
+                <li><span>🏰 Build Besar</span> <span class="price">30K</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Payment -->
+    <div class="contact-section" style="text-align: center;">
+        <h2><i class="fas fa-credit-card"></i> METODE PEMBAYARAN</h2>
+        <div class="payment-icons">
+            <span><i class="fas fa-mobile-alt"></i> GOPAY</span>
+            <span><i class="fas fa-wallet"></i> DANA</span>
+        </div>
+    </div>
+
+    <!-- Contact Admin -->
+    <div class="contact-section">
+        <h2><i class="fas fa-headset"></i> HUBUNGI KAMI (ORDER)</h2>
+        <p>Silahkan chat nomor atau email di bawah ini:</p>
+        
+        <a href="https://wa.me/6285849090562" class="btn btn-wa"><i class="fab fa-whatsapp"></i> 👑 OWNER (085849090562)</a>
+        
+        <div class="admin-grid">
+            <div class="admin-card">
+                <p>🛠️ ADMIN 1</p>
+                <a href="https://wa.me/62895426511826" style="color: var(--primary-color); text-decoration: none;">0895426511826</a>
+            </div>
+            <div class="admin-card">
+                <p>🛠️ ADMIN 2</p>
+                <a href="https://wa.me/6285138507266" style="color: var(--primary-color); text-decoration: none;">085138507266</a>
+            </div>
+            <div class="admin-card">
+                <p>🛠️ ADMIN 3</p>
+                <a href="https://wa.me/6283837104931" style="color: var(--primary-color); text-decoration: none;">083837104931</a>
+            </div>
+            <div class="admin-card">
+                <p>🛠️ ADMIN 4</p>
+                <a href="https://wa.me/6283194630764" style="color: var(--primary-color); text-decoration: none;">083194630764</a>
+            </div>
+            <div class="admin-card">
+                <p>🛠️ ADMIN 5</p>
+                <a href="https://wa.me/6285893096121" style="color: var(--primary-color); text-decoration: none;">085893096121</a>
+            </div>
+        </div>
+        
+        <p style="margin-top: 20px; text-align: center;">
+            <i class="fas fa-envelope"></i> Email: <strong>gmparkershop123@gmail.com</strong>
+        </p>
+    </div>
+
+    <!-- Community -->
+    <div class="community-section">
+        <h2><i class="fas fa-users"></i> JOIN COMMUNITY</h2>
+        <p>Pantau hasil karya dan update terbaru kami:</p>
+        
+        <a href="https://whatsapp.com/channel/0029Vb7e9FM9WtC2gE3Zhs03" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Saluran WA</a>
+        <a href="https://chat.whatsapp.com/JRyK2yAoM4v2LmIjIqHnbg" class="btn btn-wa"><i class="fas fa-comments"></i> Grup Chat</a>
+        <a href="https://tiktok.com/@gmparker.shop2" class="btn btn-tt"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://www.youtube.com/@GMPARKERSHOP" class="btn btn-yt"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="https://www.instagram.com/gmparkershop?igsh=MTd0emE3d2x0amo2cw==" class="btn btn-ig"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 GMPARKER SHOP. All Rights Reserved.</p>
+    <p>Minecraft Marketplace Service & Digital Arts</p>
+</footer>
+
+</body>
+</html>
